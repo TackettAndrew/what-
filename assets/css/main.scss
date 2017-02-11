@@ -1,0 +1,68 @@
+---
+---
+@import 'pages/pages-index';
+@import 'modules/modules-index';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body {
+    margin: 0;
+}
+
+.site-container{
+    position: absolute;
+    //overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    p {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1em;
+        line-height: 1.75em;
+    }
+
+    .button {
+        padding: 1em;
+        margin: 1em;
+        border: solid #00aeed .2em;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        border: solid #00aeed .2em;
+        background-color: #00aeed;
+        color: white;
+    }
+
+    .row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        & {
+            width: 100%;
+        }
+
+        h1 {
+            display: block;
+            color: #111111;
+        }
+        p {
+            max-width: 60em;
+            padding: 0 1.33em;
+        }
+
+        .logo {
+            width: 10em;
+            padding: 1em;
+        }
+    }
+
+}

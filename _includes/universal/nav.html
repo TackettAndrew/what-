@@ -1,0 +1,21 @@
+<button class="hamburger-button" onclick="button()"><img src="assets\images\button-01.png"></button>
+<nav id="hamburger-menu" style="right: -100px;">
+    <div class="spacer"></div>
+    <a href="#" class="nav-button"><h1>HOME</h1></a>
+    <a href="#" class="nav-button"><h1>HISTORY</h1></a>
+    <a href="#" class="nav-button"><img src="assets\images\twitter.png" class="sm-button"></a>
+    <a href="#" class="nav-button"><img src="assets\images\youtube.png" class="sm-button"></a>
+    <a href="#" class="nav-button"><img src="assets\images\facebook.png" class="sm-button"></a>
+</nav>
+
+<script>
+function button() {
+    var menu = document.getElementById("hamburger-menu");
+
+    if (menu.class == "-100px") {
+        menu.classlist = 0;
+    } else {
+        menu.style.right = "-100px";
+    }
+}
+</script>

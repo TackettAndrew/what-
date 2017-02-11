@@ -1,0 +1,76 @@
+.home-header {
+    background-image: url(../images/tye-dye.jpg);
+    background-size: cover;
+    text-align: center;
+
+    .logo {
+        height: 20em;
+        margin: 2em;
+        margin-bottom: .5em;
+    }
+    .shadow {
+        height: 10px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+    }
+}
+
+.grey {
+    background: #eee;
+}
+
+/*(specific Flexbox Properties for Modules*/
+
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+    max-width: 60em;
+    flex-wrap: wrap;
+}
+
+.social {
+    img {
+        height: 5em;
+        margin: .5em;
+    }
+}
+
+.email-form {
+
+    input {
+        width: 30em;
+        display: block;
+        padding: 1em 0;
+        margin: 1em 0;
+        border: none;
+    }
+    textarea {
+        width: 30em;
+        display: block;
+        padding: 1em 0;
+        margin: 1em 0;
+        border: none;
+    }
+    button {
+        display: block;
+        padding: 1em;
+        margin: 1em 0;
+        border: none;
+        background: #00aeed;
+        color: white;
+        font-family: Montserrat;
+        font-weight: bold;
+        margin: 0 auto 1.33em auto;
+    }
+}
+
+@media (max-width: 30em) {
+    .email-form {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+        }
+    }
+}
