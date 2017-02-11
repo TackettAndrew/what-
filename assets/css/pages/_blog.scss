@@ -1,0 +1,55 @@
+.content {
+    margin-bottom: 1.33em;
+    flex-direction: column;
+}
+
+.post-list {
+    list-style: none;
+    max-width: 45em;
+    .post-list-item {
+        padding-bottom: 1.33em;
+        .post-title {
+            color: #00aeed;
+            text-decoration: none;
+            font-size: 2em;
+            h4 {
+                margin: 0;
+            }
+        }
+        .post-title:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.heading {
+    flex-direction: column !important;
+}
+
+.date {
+    margin: 0 0 1.33em 0;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #111111;
+    padding-left: 1em;
+}
+
+.header2-logo {
+    height: 16em;
+    margin: 1.33em 0;
+}
+
+.navbar {
+    flex-direction: row;
+    background: #111111;
+    a {
+        & {
+            color: white;
+            font-family: Montserrat;
+            text-decoration: none;
+            padding: 0 1em;
+        }
+    }
+}

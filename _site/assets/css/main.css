@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 @import url("https://fonts.googleapis.com/css?family=Oxygen");
 .home-header {
   background-image: url(../images/tye-dye.jpg);
@@ -56,6 +56,48 @@
       width: 100%; }
     .email-form textarea {
       width: 100%; } }
+.content {
+  margin-bottom: 1.33em;
+  flex-direction: column; }
+
+.post-list {
+  list-style: none;
+  max-width: 45em; }
+  .post-list .post-list-item {
+    padding-bottom: 1.33em; }
+    .post-list .post-list-item .post-title {
+      color: #00aeed;
+      text-decoration: none;
+      font-size: 2em; }
+      .post-list .post-list-item .post-title h4 {
+        margin: 0; }
+    .post-list .post-list-item .post-title:hover {
+      text-decoration: underline; }
+
+.heading {
+  flex-direction: column !important; }
+
+.date {
+  margin: 0 0 1.33em 0; }
+
+.back-button {
+  text-decoration: none;
+  color: #111111;
+  padding-left: 1em; }
+
+.header2-logo {
+  height: 16em;
+  margin: 1.33em 0; }
+
+.navbar {
+  flex-direction: row;
+  background: #111111; }
+  .navbar a {
+    color: white;
+    font-family: Montserrat;
+    text-decoration: none;
+    padding: 0 1em; }
+
 nav {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -124,21 +166,28 @@ body {
   margin: 0; }
 
 .site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   margin: 0;
   width: 100%; }
-  .site-container h1, .site-container h2, .site-container h3, .site-container h4, .site-container h5, .site-container h6 {
+  .site-container * {
     font-family: 'Montserrat', sans-serif; }
   .site-container p {
     font-family: 'Oxygen', sans-serif;
     font-size: 1em;
-    line-height: 1.75em; }
+    line-height: 1.75em;
+    max-width: 60em;
+    padding: 0 1.33em; }
   .site-container .button {
     padding: 1em;
     margin: 1em;
     border: solid #00aeed .2em;
     font-family: 'Montserrat', sans-serif;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none;
+    color: #111111; }
   .site-container .button:hover {
     border: solid #00aeed .2em;
     background-color: #00aeed;
@@ -146,17 +195,12 @@ body {
   .site-container .row {
     display: flex;
     width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; }
     .site-container .row {
       width: 100%; }
-    .site-container .row h1 {
-      display: block;
-      color: #111111; }
-    .site-container .row p {
-      max-width: 60em;
-      padding: 0 1.33em; }
     .site-container .row .logo {
       width: 10em;
       padding: 1em; }

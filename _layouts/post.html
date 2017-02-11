@@ -1,0 +1,23 @@
+---
+---
+
+{% include universal/head.html %}
+
+<body>
+    <div class="site-container">
+
+        <img class="header2-logo" src="{{site.baseurl}}/assets/images/LogoFullColor.svg">
+
+        <div class="heading row">
+            <h1>{{page.title}}</h1>
+            <p class="date">{{page.date | date:"%b %d, 20%y"}}</p>
+        </div>
+
+        <div class="content row">
+            {{content}}
+        </div>
+
+        {% include universal/footer.html %}
+
+    </div>
+</body>

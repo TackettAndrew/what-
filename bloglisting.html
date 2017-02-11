@@ -1,0 +1,39 @@
+---
+---
+
+{% include universal/head.html %}
+
+<body>
+    <div class="site-container">
+
+        <!--Navigation-->
+        <img class="header2-logo" src="{{site.baseurl}}/assets/images/LogoFullColor.svg">
+        <div class="navbar row">
+            <a class="back-button" href="{{site.baseurl}}/bloglisting.html"><h4><</h4></a>
+            <a class="back-button" href="{{site.baseurl}}/index.html"><h4>HOME</h4></a>
+            <div>
+            <a href="#allposts">All posts</a>
+            {% for category in site.categories %}
+            <a href="#{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+
+        <div class="row">
+        <ul class="post-list">
+            {% for post in site.posts %}
+                <li class="post-list-item">
+                    <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+                    <a class="post-title" href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                    <P>
+                        {{ post.content | strip_html | truncatewords:75}}
+                    </p>
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
+
+        {% include universal/footer.html %}
+
+    </div>
+</body>
