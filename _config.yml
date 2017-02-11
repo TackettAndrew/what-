@@ -8,7 +8,7 @@ sass:
     style: :nested
  lsi: false
  safe: true
- source: [your repo's top level directory]
+ source: what-
  incremental: false
  highlighter: rouge
  gist:
