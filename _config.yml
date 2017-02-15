@@ -3,7 +3,6 @@ permalink: pretty
 
 port: 5431
 
-sass:
 sass_dir: /assets/css
 style: :nested
 lsi: false
@@ -11,12 +10,9 @@ safe: true
 source: what-
 incremental: false
 highlighter: rouge
-gist:
 noscript: false
-kramdown:
 math_engine: mathjax   
 github: [metadata]
-kramdown:
 input: GFM
 hard_wrap: false
 gems:
